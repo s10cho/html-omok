@@ -1,0 +1,101 @@
+:root {
+  --cell-size: 40px;
+}
+
+.center {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.board {
+  border: 1px solid black;
+}
+
+.board-padding {
+  background: #E38D00;
+  border: 2px solid black;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+  padding: calc(var(--cell-size) / 2);
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  border: 1px solid black;
+  width: var(--cell-size);
+  height: var(--cell-size);
+  box-sizing: border-box;
+}
+
+.container .cell,
+.points .cell {
+  border: none;
+}
+
+.unit {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.black {
+  background: black;
+  color: white;
+}
+
+.white {
+  background: white;
+  color: black;
+}
+
+.black.shadow {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.white.shadow {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.hide {
+  display: none;
+}
+
+.info {
+  font-size: 4rem;
+  z-index: 100;
+  text-align: center;
+  width: 50%;
+  padding: 1rem;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.point {
+  background: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+#undo {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #E38D00;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
